@@ -133,15 +133,4 @@ function abreModalEdicao(cardId) {
   modal.show();
 }
 
-/* Bloqueia números no input*/
-const BloqueiaNumero = document.getElementById("cardImage");
-BloqueiaNumero.addEventListener("keydown", function(event) {
-  // Verifica se a tecla pressionada é um número
-  if (event.key >= 0 && event.key <= 9) {
-    // Cancela a ação padrão do evento
-    event.preventDefault();
-    alert("Esse não é um campo para números. Adicione a URL da imagem");
-  }
-});
-
 window.addEventListener("load", exibeTodosGrupos);
